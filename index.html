@@ -1,58 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN" data-theme="dark">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS 速查表 — CSS Cheat Sheet</title>
-  <meta name="description" content="一份全面的 CSS 速查表，涵盖选择器、属性、@规则、值类型与单位，支持浏览器兼容性筛选与搜索。A comprehensive CSS cheat sheet with browser compatibility and search.">
-  <meta name="keywords" content="CSS,cheat sheet,速查表,选择器,属性,css selectors,css properties,css values,css units,前端开发">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 速查表 — CSS Cheat Sheet</title>
+    <meta
+      name="description"
+      content="一份全面的 CSS 速查表，涵盖选择器、属性、@规则、值类型与单位，支持浏览器兼容性筛选与搜索。A comprehensive CSS cheat sheet with browser compatibility and search."
+    />
+    <meta
+      name="keywords"
+      content="CSS,cheat sheet,速查表,选择器,属性,css selectors,css properties,css values,css units,前端开发"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <h1>
+          CSS 速查表 <span class="accent">Cheat Sheet</span
+          ><span class="subtitle">v1.0</span>
+        </h1>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <h1>CSS 速查表 <span class="accent">Cheat Sheet</span><span class="subtitle">v1.0</span></h1>
-
-      <div class="search-wrap">
-        <span class="icon">🔍</span>
-        <input type="text" id="search" placeholder="搜索属性 / Search… (Ctrl+K)" autocomplete="off">
-      </div>
-
-      <div class="header-controls">
-        <div class="browser-filter">
-          <label for="browser-filter">浏览器：</label>
-          <select id="browser-filter">
-            <option value="all">🌐 所有</option>
-            <option value="chrome">Chrome</option>
-            <option value="firefox">Firefox</option>
-            <option value="safari">Safari</option>
-          </select>
+        <div class="search-wrap">
+          <span class="icon">🔍</span>
+          <input
+            type="text"
+            id="search"
+            placeholder="搜索属性 / Search… (Ctrl+K)"
+            autocomplete="off"
+          />
         </div>
-        <button class="btn-icon" id="theme-toggle" title="切换主题 / Toggle theme">☀️</button>
-        <a class="btn-icon" href="https://github.com/wh1tea/css-cheat-sheet" target="_blank" rel="noopener" title="GitHub">🐙</a>
+
+        <div class="header-controls">
+          <div class="browser-filter">
+            <label for="browser-filter">浏览器：</label>
+            <select id="browser-filter">
+              <option value="all">🌐 所有</option>
+              <option value="chrome">Chrome</option>
+              <option value="firefox">Firefox</option>
+              <option value="safari">Safari</option>
+            </select>
+          </div>
+          <button
+            class="btn-icon"
+            id="theme-toggle"
+            title="切换主题 / Toggle theme"
+          >
+            ☀️
+          </button>
+          <a
+            class="btn-icon"
+            href="https://github.com/wh1tea/css-cheat-sheet"
+            target="_blank"
+            rel="noopener"
+            title="GitHub"
+            >🐙</a
+          >
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Stats -->
-  <div class="stats-bar"></div>
+    <!-- Stats -->
+    <div class="stats-bar"></div>
 
-  <!-- Section Tabs -->
-  <nav class="section-tabs"></nav>
+    <!-- Section Tabs -->
+    <nav class="section-tabs"></nav>
 
-  <!-- Main Content -->
-  <main id="content"></main>
+    <!-- Main Content -->
+    <main id="content"></main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>数据参考自 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener">MDN Web Docs</a> &nbsp;|&nbsp;
-    开源项目 <a href="https://github.com/wh1tea/css-cheat-sheet" target="_blank" rel="noopener">css-cheat-sheet</a> &nbsp;|&nbsp;
-    MIT License</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        数据参考自
+        <a
+          href="https://developer.mozilla.org/zh-CN/docs/Web/CSS"
+          target="_blank"
+          rel="noopener"
+          >MDN Web Docs</a
+        >
+        &nbsp;|&nbsp; 开源项目
+        <a
+          href="https://github.com/wh1tea/css-cheat-sheet"
+          target="_blank"
+          rel="noopener"
+          >css-cheat-sheet</a
+        >
+        &nbsp;|&nbsp; MIT License
+      </p>
+    </footer>
 
-  <script src="js/app.js"></script>
-</body>
+    <script src="js/app.js"></script>
+  </body>
 </html>

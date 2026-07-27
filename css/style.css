@@ -4,7 +4,9 @@
    ============================================================ */
 
 /* ---- CSS Reset ---- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -37,8 +39,12 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
-  --font-mono: 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'SF Mono', Consolas, monospace;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-mono:
+    "Cascadia Code", "Fira Code", "JetBrains Mono", "SF Mono", Consolas,
+    monospace;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Microsoft YaHei", sans-serif;
 }
 
 /* ---- Light Theme ---- */
@@ -72,7 +78,9 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 a {
@@ -151,7 +159,9 @@ a:hover {
   border-radius: var(--radius-sm);
   color: var(--text-primary);
   outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .search-wrap input:focus {
@@ -211,7 +221,10 @@ a:hover {
   color: var(--text-secondary);
   cursor: pointer;
   font-size: 1rem;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .btn-icon:hover {
@@ -288,8 +301,14 @@ a:hover {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section-title {
@@ -313,7 +332,9 @@ a:hover {
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .card:hover {
@@ -338,11 +359,21 @@ a:hover {
 }
 
 /* Card color accent */
-.card[data-section="selectors"] .card-header { border-left: 3px solid var(--color-selectors); }
-.card[data-section="properties"] .card-header { border-left: 3px solid var(--color-properties); }
-.card[data-section="at-rules"] .card-header { border-left: 3px solid var(--color-at-rules); }
-.card[data-section="values"] .card-header { border-left: 3px solid var(--color-values); }
-.card[data-section="units"] .card-header { border-left: 3px solid var(--color-units); }
+.card[data-section="selectors"] .card-header {
+  border-left: 3px solid var(--color-selectors);
+}
+.card[data-section="properties"] .card-header {
+  border-left: 3px solid var(--color-properties);
+}
+.card[data-section="at-rules"] .card-header {
+  border-left: 3px solid var(--color-at-rules);
+}
+.card[data-section="values"] .card-header {
+  border-left: 3px solid var(--color-values);
+}
+.card[data-section="units"] .card-header {
+  border-left: 3px solid var(--color-units);
+}
 
 .card-body {
   display: grid;
@@ -413,7 +444,10 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.15s, color 0.15s, background 0.15s;
+  transition:
+    opacity 0.15s,
+    color 0.15s,
+    background 0.15s;
 }
 
 .item-row:hover .copy-btn {
@@ -449,9 +483,18 @@ a:hover {
   font-weight: 600;
 }
 
-.badge-yes { background: #a0d468; color: #1a1b2e; }
-.badge-partial { background: #ffce54; color: #1a1b2e; }
-.badge-no { background: #ed6a6a; color: #fff; }
+.badge-yes {
+  background: #a0d468;
+  color: #1a1b2e;
+}
+.badge-partial {
+  background: #ffce54;
+  color: #1a1b2e;
+}
+.badge-no {
+  background: #ed6a6a;
+  color: #fff;
+}
 
 /* Filtered out items */
 [data-filtered="true"] {
@@ -473,7 +516,9 @@ a:hover {
   font-family: var(--font-mono);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  transition: transform 0.3s, opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
   z-index: 999;
   pointer-events: none;
 }
@@ -606,13 +651,23 @@ a:hover {
 
 /* ---- Print Styles ---- */
 @media print {
-  .header { position: static; }
+  .header {
+    position: static;
+  }
   .search-wrap,
   .header-controls,
   .section-tabs,
   .stats-bar,
   .copy-btn,
-  .toast { display: none; }
-  .card { break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
-  .item-row:hover { background: transparent; }
+  .toast {
+    display: none;
+  }
+  .card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  .item-row:hover {
+    background: transparent;
+  }
 }

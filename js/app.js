@@ -2,7 +2,7 @@
    CSS Cheat Sheet — Application Logic
    ============================================================ */
 
-(function() {
+(function () {
   'use strict';
 
   // ---- State ----
@@ -62,8 +62,8 @@
     if (!state.searchQuery) return true;
     const q = state.searchQuery.toLowerCase();
     return item.name.toLowerCase().includes(q)
-        || (item.desc && item.desc.toLowerCase().includes(q))
-        || (item.descEn && item.descEn.toLowerCase().includes(q));
+      || (item.desc && item.desc.toLowerCase().includes(q))
+      || (item.descEn && item.descEn.toLowerCase().includes(q));
   }
 
   // ---- Render ----

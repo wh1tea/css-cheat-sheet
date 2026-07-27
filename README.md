@@ -85,6 +85,7 @@ xdg-open index.html # Linux
 ```
 
 **浏览器兼容性级别 / Browser Support Levels**:
+
 - `yes` — 完全支持
 - `partial` — 部分支持
 - `no` — 不支持
@@ -95,7 +96,7 @@ xdg-open index.html # Linux
 ## 致谢 / Credits
 
 - 数据参考自 [MDN Web Docs](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
-- 灵感来源于 [code.ciaoca.com CSS Cheat Sheet](http://code.ciaoca.com/style/css-cheat-sheet/)
+- 灵感来源于 [CSS Cheat Sheet](http://code.ciaoca.com/style/css-cheat-sheet/)
 
 ## 许可证 / License
 
